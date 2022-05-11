@@ -22,8 +22,8 @@
 #include <hidl/HidlTransportSupport.h>
 #include "ChargeControl.h"
 
-using vendor::kscope::chgctrl::V1_0::IChargeControl;
-using vendor::kscope::chgctrl::implementation::ChargeControl;
+using vendor::lineage::chgctrl::V1_0::IChargeControl;
+using vendor::lineage::chgctrl::implementation::ChargeControl;
 
 int main() {
     android::sp<IChargeControl> service = new ChargeControl();

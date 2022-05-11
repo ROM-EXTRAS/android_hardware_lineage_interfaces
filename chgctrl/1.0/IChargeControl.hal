@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package vendor.kscope.chgctrl@1.0;
+package vendor.lineage.chgctrl@1.0;
 
 interface IChargeControl {
     getChargeEnabled() generates (bool enabled);

@@ -28,7 +28,7 @@
 #define CHARGE_ENABLED '1'
 #define CHARGE_DISABLED '0'
 
-namespace vendor::kscope::chgctrl::implementation {
+namespace vendor::lineage::chgctrl::implementation {
 
 static int readNode(char& ret) {
     int fd;
@@ -64,7 +64,7 @@ static int writeNode(char value) {
     return 0;
 }
 
-// Methods from ::vendor::kscope::chgctrl::V1_0::IChargeControl follow.
+// Methods from ::vendor::lineage::chgctrl::V1_0::IChargeControl follow.
 Return<bool> ChargeControl::getChargeEnabled() {
     char status = 0;
 
@@ -96,4 +96,4 @@ Return<bool> ChargeControl::setChargeEnabled(bool enabled) {
     //return new ChargeControl();
 //}
 //
-}  // namespace vendor::kscope::chgctrl::implementation
+}  // namespace vendor::lineage::chgctrl::implementation

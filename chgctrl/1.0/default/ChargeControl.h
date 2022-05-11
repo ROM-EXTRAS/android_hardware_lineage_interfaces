@@ -16,11 +16,11 @@
 
 #pragma once
 
-#include <vendor/kscope/chgctrl/1.0/IChargeControl.h>
+#include <vendor/lineage/chgctrl/1.0/IChargeControl.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 
-namespace vendor::kscope::chgctrl::implementation {
+namespace vendor::lineage::chgctrl::implementation {
 
 using ::android::hardware::hidl_array;
 using ::android::hardware::hidl_memory;
@@ -31,7 +31,7 @@ using ::android::hardware::Void;
 using ::android::sp;
 
 struct ChargeControl : public V1_0::IChargeControl {
-    // Methods from ::vendor::kscope::chgctrl::V1_0::IChargeControl follow.
+    // Methods from ::vendor::lineage::chgctrl::V1_0::IChargeControl follow.
     Return<bool> getChargeEnabled() override;
     Return<bool> setChargeEnabled(bool enabled) override;
 
@@ -42,4 +42,4 @@ struct ChargeControl : public V1_0::IChargeControl {
 // FIXME: most likely delete, this is only for passthrough implementations
 // extern "C" IChargeControl* HIDL_FETCH_IChargeControl(const char* name);
 
-}  // namespace vendor::kscope::chgctrl::implementation
+}  // namespace vendor::lineage::chgctrl::implementation
